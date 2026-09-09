@@ -1,0 +1,177 @@
+:root{
+  --nav:#1f2b33;
+  --purple:#2f357f;
+  --blue:#2f3cff;
+}
+
+*{font-family:"Cairo",sans-serif;}
+body{background:#f3f3f3;}
+.nav-dark{background:var(--nav);}
+.back-link{color:#fff;font-weight:900;font-size:24px;text-decoration:none;}
+
+.hero{position:relative;height:360px;overflow:hidden;}
+.hero-img{width:100%;height:100%;object-fit:cover;}
+.hero-pill{
+  position:absolute;
+  bottom:20px;
+  left:50%;
+  transform:translateX(-50%);
+  background:var(--purple);
+  color:#fff;
+  padding:14px 40px;
+  border-radius:10px;
+  font-weight:900;
+  font-size:20px;
+  text-align:center;
+  width:min(920px,92%);
+}
+
+.section-subtitle{color:#444;font-weight:700;}
+
+.price-card{
+  background:#e9e9e9;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 6px 12px rgba(0,0,0,.1);
+  cursor:pointer;
+  border:2px solid transparent;
+  transition:.2s;
+}
+.price-card h3{font-weight:900;}
+.price{font-size:26px;font-weight:900;}
+.price-card.selected{
+  border-color:var(--blue);
+  background:#f6fbff;
+  transform:translateY(-2px);
+}
+
+.stock-card{
+  margin-top:10px;
+  background:#e9e9e9;
+  padding:12px;
+  border-radius:12px;
+  font-weight:800;
+}
+
+.ticket-form{
+  max-width:540px;
+  margin:0 0 0 auto;
+  padding-top:8px;
+}
+.field-row{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:26px;
+  margin:0 0 28px;
+}
+.field-row input{
+  width:270px;
+  height:38px;
+  border-radius:8px;
+  border:1.5px solid #78a7c4;
+  background:#fff;
+  box-shadow:0 2px 6px rgba(0,0,0,.08);
+  padding:0 12px;
+  outline:none;
+}
+.field-row label{
+  width:160px;
+  margin:0;
+  font-weight:900;
+  font-size:22px;
+  text-align:right;
+  color:#111;
+}
+
+.fielddd{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  margin-left:-770px;
+}
+
+.payment{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:52px;
+  margin:52px 0 34px;
+}
+.visa{width:86px;object-fit:contain;}
+.wallet-pay{width:78px;object-fit:contain;}
+
+.book-btn{
+  width:208px;
+  height:40px;
+  border-radius:14px;
+  border:1.5px solid var(--blue);
+  background:#fff;
+  font-size:22px;
+  font-weight:900;
+  line-height:1;
+  transition:.2s;
+}
+.book-btn:hover{background:var(--blue);color:#fff;}
+
+.bookings-section{
+  max-width:900px;
+  margin:0 auto;
+  text-align:right;
+}
+.bookings-title{
+  font-size:28px;
+  font-weight:900;
+  margin-bottom:18px;
+}
+.bookings-list{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+.booking-card{
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  align-items:center;
+  background:#fff;
+  border-radius:14px;
+  padding:16px 18px;
+  box-shadow:0 10px 18px rgba(0,0,0,.08);
+}
+.booking-meta{color:#555;font-weight:700;margin-top:4px;}
+.booking-actions button{
+  background:#d9534f;
+  color:#fff;
+  border:none;
+  border-radius:10px;
+  padding:10px 18px;
+  font-weight:900;
+}
+.booking-actions button[disabled]{opacity:.5;cursor:not-allowed;}
+
+.empty-state{
+  padding:24px;
+  background:#fff;
+  border-radius:14px;
+  text-align:center;
+  font-weight:800;
+  color:#555;
+  box-shadow:0 10px 18px rgba(0,0,0,.06);
+}
+
+.illus{width:250px;}
+.footer-dark{background:var(--nav);color:#fff;}
+
+@media (max-width:768px){
+  .ticket-form{max-width:100%;margin:0;}
+  .field-row{gap:14px;margin-bottom:18px;}
+  .field-row label{width:132px;font-size:18px;}
+  .field-row input{width:100%;max-width:250px;}
+  .payment{gap:28px;margin:34px 0 24px;}
+  .visa{width:72px;}
+  .wallet-pay{width:66px;}
+  .fielddd{margin-left:0;}
+  .booking-card{flex-direction:column;align-items:flex-start;}
+}

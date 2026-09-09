@@ -1,0 +1,200 @@
+/* contact.css */
+:root{
+  --nav:#1f2b33;
+  --text:#0f172a;
+  --muted:#6b7280;
+  --stroke:#d8cfcf;
+  --pill:#e9e2e2;
+  --accent:#2aa9b6; /* turquoise border around image */
+}
+
+*{ font-family:"Cairo", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+
+body{ background:#fff; color:var(--text); }
+
+.nav-dark{ background: var(--nav); }
+
+.back-link{
+  color:#fff; text-decoration:none;
+  font-weight:800; font-size:26px;
+}
+.back-link:hover{ opacity:.85; }
+
+.brand-badge{
+  width: 38px; height: 38px;
+  border-radius: 12px;
+  display:flex; align-items:center; justify-content:center;
+  background: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.16);
+}
+
+.page-title{
+  font-weight: 900;
+  font-size: clamp(36px, 4.2vw, 64px);
+  letter-spacing: .2px;
+  margin-bottom: 8px;
+}
+
+.page-subtitle{
+  color:#111;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+}
+
+.capsule{
+  width: min(980px, 100%);
+  border: 2px solid var(--stroke);
+  border-radius: 999px;
+  padding: 18px 26px;
+  text-align: center;
+  color:#111;
+  font-weight: 700;
+  line-height: 2;
+}
+
+.section-title{
+  font-weight: 900;
+  font-size: clamp(28px, 3vw, 44px);
+  margin-top: 6px;
+}
+
+.inquiry-box{
+  width: min(980px, 100%);
+  border: 2px solid var(--stroke);
+  border-radius: 40px;
+  padding: 18px;
+  background: #fff;
+}
+
+.inquiry-textarea{
+  width: 100%;
+  height: 180px;
+  border: 0;
+  outline: none;
+  resize: none;
+  font-size: 18px;
+  line-height: 1.9;
+  padding: 6px 10px;
+}
+
+.form-wrap{
+  width: min(980px, 100%);
+  /* push the form block to the right edge of its container */
+  margin-left: auto !important;
+  margin-right: 0 !important;
+  text-align: right;
+}
+
+.stack-fields{
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.field-row{
+  display:flex;
+  align-items:center;
+  gap: 18px;
+  justify-content: flex-end;
+}
+
+.pill-input{
+  width: min(520px, 100%);
+  height: 46px;
+  border-radius: 999px;
+  border: 2px solid #bfb6d8; /* slight purple-ish like screenshot */
+  outline: none;
+  padding: 0 18px;
+  font-size: 16px;
+}
+
+.pill-input:focus{
+  border-color: #8e86c9;
+  box-shadow: 0 0 0 4px rgba(142,134,201,.15);
+}
+
+.pill-label{
+  min-width: 160px;
+  text-align: right;
+  font-weight: 800;
+  color:#111;
+}
+
+.send-btn{
+  border-radius: 999px;
+  padding: 10px 44px;
+  font-weight: 900;
+  font-size: 22px;
+  border: 2px solid var(--stroke);
+  background: #fff;
+  box-shadow: 0 10px 18px rgba(0,0,0,.06);
+}
+
+.send-btn:hover{ transform: translateY(-1px); }
+.send-btn:active{ transform: translateY(0px); }
+
+.note{
+  color:#111;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.contact-image-wrap{
+  width: min(920px, 100%);
+  border-radius: 38px;
+  overflow:hidden;
+  border: 6px solid var(--accent);
+  box-shadow: 0 18px 40px rgba(0,0,0,.10);
+  background: #0b1220;
+}
+
+.contact-image-wrap img{
+  display:block;
+  width: 100%;
+  height: auto;
+}
+
+.footer-dark{
+  background: var(--nav);
+  color:#fff;
+}
+
+/* Place the page main content to the right side of the viewport */
+main > .container {
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+}
+
+/* Full-bleed full-width image */
+.img-full-bleed{
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  overflow: hidden;
+}
+.img-full-bleed img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Center the image within a viewport area */
+.img-center-screen{
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* centers image vertically within full viewport height */
+  overflow: auto; /* allow scrolling if image larger than viewport */
+  background: transparent;
+}
+.img-center-screen img{
+  width: auto !important;
+  max-width: none !important;
+  height: auto !important;
+  display: block;
+  /* override Bootstrap .img-fluid to preserve intrinsic size */
+}

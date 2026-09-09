@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
+  <defs>
+    <linearGradient id="ticketFill" x1="16" y1="22" x2="76" y2="74" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE587"/>
+      <stop offset="1" stop-color="#F4B93B"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="6" width="96" height="84" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="6" stdDeviation="4" flood-color="#402500" flood-opacity=".22"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <g transform="rotate(-18 46 48)">
+      <path d="M18 30C18 26.6863 20.6863 24 24 24H72V34C68.6863 34 66 36.6863 66 40C66 43.3137 68.6863 46 72 46V56C68.6863 56 66 58.6863 66 62C66 65.3137 68.6863 68 72 68V72H24C20.6863 72 18 69.3137 18 66V56C21.3137 56 24 53.3137 24 50C24 46.6863 21.3137 44 18 44V30Z" fill="url(#ticketFill)"/>
+      <path d="M30 34V64" stroke="#B6801C" stroke-width="3" stroke-dasharray="4 4"/>
+      <rect x="34" y="34" width="28" height="28" rx="5" fill="#F6C855" stroke="#C99224" stroke-width="2"/>
+      <path d="M48 39L50.4 45.6L57.4 45.8L51.8 50L53.8 56.6L48 52.5L42.2 56.6L44.2 50L38.6 45.8L45.6 45.6L48 39Z" fill="#C59022"/>
+    </g>
+  </g>
+</svg>

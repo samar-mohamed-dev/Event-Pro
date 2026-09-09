@@ -1,0 +1,179 @@
+
+:root{
+  --nav:#1f2b33;
+  --purple:#a100ff;
+  --purple2:#6b00b5;
+  --gray:#d9d9d9;
+  --stroke:#444;
+}
+
+*{ font-family:"Cairo", sans-serif; }
+
+body{ background:#fff; }
+
+/* NAV */
+.nav-dark{ background: var(--nav); }
+
+.back-link{
+  color:#fff;
+  text-decoration:none;
+  font-weight:900;
+  font-size:26px;
+}
+.back-link:hover{ opacity:.85; }
+
+.brand-badge{
+  width:38px; height:38px;
+  border-radius:50%;
+  background: linear-gradient(135deg,#00d2ff,#3a47d5);
+}
+
+/* Logo */
+.logo-wrap img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  background:#0f172a;
+  padding:16px;
+}
+
+.brand-title{
+  font-weight:900;
+  font-size:56px;
+  margin: 0;
+}
+
+/* Search box */
+.search-box{
+  width: min(980px, 100%);
+  background: var(--gray);
+  border-radius: 40px;
+  border: 2px solid var(--purple);
+  padding: 28px 26px 34px;
+  box-shadow: 0 18px 35px rgba(0,0,0,.08);
+}
+
+.tabs-row{
+  display:flex;
+  justify-content: space-between;
+  padding: 0 18px;
+}
+
+.tab-btn{
+  background: transparent;
+  border: 0;
+  font-weight: 900;
+  font-size: 44px;
+  color: #111;
+  padding: 6px 10px;
+}
+
+.tab-btn.active{
+  color:#111;
+}
+
+.divider{
+  height: 2px;
+  background: rgba(0,0,0,.25);
+  margin: 12px 0 18px;
+}
+
+.search-input-wrap{
+  display:flex;
+  justify-content:center;
+}
+
+.search-input{
+  width: min(720px, 92%);
+  height: 70px;
+  border-radius: 999px;
+  border: 3px solid var(--purple2);
+  outline:none;
+  padding: 0 26px;
+  font-size: 24px;
+  background:#fff;
+}
+
+.search-input::placeholder{
+  color:#666;
+  font-weight:700;
+}
+
+/* Social box */
+.social-box{
+  width: min(980px, 100%);
+  border-radius: 40px;
+  border: 2px solid var(--purple);
+  padding: 26px 26px 30px;
+  background:#fff;
+  box-shadow: 0 18px 35px rgba(0,0,0,.06);
+}
+
+.social-icons{
+  display:flex;
+  justify-content:center;
+  gap: 28px;
+  font-size: 58px;
+}
+
+.soc{
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  transform: translateY(0);
+  transition:.15s;
+}
+.soc:hover{ transform: translateY(-2px); }
+
+.facebook{ color:#1877f2; }
+.tiktok{ color:#111; }
+.insta{ color:#c13584; }
+.telegram{ color:#7a5cff; }
+.whatsapp{ color:#25D366; }
+
+/* actions */
+.actions{
+  display:flex;
+  justify-content:center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.pill-action{
+  border: 0;
+  background: transparent;
+  display:flex;
+  align-items:center;
+  gap: 14px;
+  font-weight: 900;
+  font-size: 26px;
+}
+
+.icon-circle{
+  width: 94px;
+  height: 50px;
+  border-radius: 999px;
+  border: 1.6px solid rgba(0,0,0,.35);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#efefef;
+}
+
+.icon-circle i{
+  font-size: 26px;
+  color:#333;
+}
+
+/* Country */
+.country-title{
+  font-weight: 900;
+  font-size: 44px;
+}
+
+/* Footer */
+.footer-dark{
+  background: var(--nav);
+  color:#fff;
+}

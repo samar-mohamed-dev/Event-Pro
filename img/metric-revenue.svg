@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
+  <defs>
+    <linearGradient id="billFill" x1="18" y1="40" x2="66" y2="76" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A8FF79"/>
+      <stop offset="1" stop-color="#3AAA35"/>
+    </linearGradient>
+    <linearGradient id="chartStroke" x1="26" y1="12" x2="72" y2="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7EF4FF"/>
+      <stop offset="1" stop-color="#77A3FF"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="4" width="96" height="88" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="6" stdDeviation="4" flood-color="#153314" flood-opacity=".22"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <path d="M18 36L42 16L58 26L72 14" stroke="url(#chartStroke)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M66 14H76V24" stroke="url(#chartStroke)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="16" y="40" width="48" height="28" rx="5" fill="url(#billFill)"/>
+    <rect x="20" y="44" width="40" height="20" rx="4" fill="#58C745" fill-opacity=".55"/>
+    <circle cx="40" cy="54" r="8" fill="#E9FFB4"/>
+    <path d="M40 49V59M36.5 51.5C36.5 50.4 37.7 49.5 39.2 49.5H41C42.6 49.5 43.8 50.4 43.8 51.5C43.8 52.7 42.7 53.2 40 54C37.3 54.8 36.2 55.3 36.2 56.5C36.2 57.6 37.4 58.5 39 58.5H40.8C42.3 58.5 43.5 57.6 43.5 56.5" stroke="#39862D" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M16 46C19 46 21 44 21 40M59 40C59 44 61 46 64 46M16 62C19 62 21 64 21 68M59 68C59 64 61 62 64 62" stroke="#2F8A2F" stroke-width="2.2" stroke-linecap="round"/>
+    <ellipse cx="74" cy="62" rx="10" ry="4" fill="#B26A22"/>
+    <path d="M64 50C64 47.8 68.5 46 74 46C79.5 46 84 47.8 84 50V62C84 64.2 79.5 66 74 66C68.5 66 64 64.2 64 62V50Z" fill="#F0B054"/>
+    <path d="M64 56C64 58.2 68.5 60 74 60C79.5 60 84 58.2 84 56" stroke="#B26A22" stroke-width="2"/>
+    <path d="M64 50C64 52.2 68.5 54 74 54C79.5 54 84 52.2 84 50" stroke="#B26A22" stroke-width="2"/>
+  </g>
+</svg>

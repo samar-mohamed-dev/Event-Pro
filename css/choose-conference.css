@@ -1,0 +1,256 @@
+:root{
+  --nav:#1f2b33;
+  --pill:#2f357f;
+  --muted:#6b7280;
+  --cardStroke:#ececec;
+  --btn:#7fd5e4;
+}
+
+*{ font-family:"Cairo", sans-serif; }
+
+body{ background:#fff; }
+
+/* NAV */
+.nav-dark{ background: var(--nav); }
+
+.back-link{
+  color:#fff;
+  text-decoration:none;
+  font-weight:900;
+  font-size:26px;
+}
+.back-link:hover{ opacity:.85; }
+
+.brand-badge{
+  width:38px; height:38px;
+  border-radius:50%;
+  background: linear-gradient(135deg,#00d2ff,#3a47d5);
+  border:1px solid rgba(255,255,255,.15);
+}
+
+/* HERO */
+.hero{
+  position:relative;
+  height: 360px;
+  overflow:hidden;
+  background:#000;
+}
+.hero-img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  display:block;
+}
+.hero-pill{
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  bottom: 18px;
+
+  width: min(980px, 92%);
+  background: var(--pill);
+  color:#fff;
+  text-align:center;
+  font-weight: 900;
+  font-size: 20px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.22);
+}
+
+/* Conference cards */
+.conf-card{
+  background:#fff;
+  border: 1px solid var(--cardStroke);
+  border-radius: 10px;
+  padding: 16px 16px 12px;
+  box-shadow: 0 12px 22px rgba(0,0,0,.06);
+  height: 100%;
+}
+
+.selectable-card{
+  cursor:pointer;
+  transition:.2s;
+}
+
+.selectable-card.selected{
+  border-color:#2f357f;
+  box-shadow:0 14px 28px rgba(47,53,127,.18);
+  transform:translateY(-2px);
+}
+
+.conf-title{
+  text-align:center;
+  font-weight: 900;
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.conf-desc{
+  text-align:center;
+  color:#333;
+  font-weight: 700;
+  line-height: 1.8;
+  font-size: 13px;
+  margin: 0 0 12px;
+  min-height: 48px;
+}
+
+/* Meta bar like screenshot */
+.conf-meta{
+  display:flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #efefef;
+  font-size: 12px;
+  font-weight: 700;
+  color:#111;
+}
+
+.conf-meta span{
+  display:flex;
+  align-items:center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.conf-meta i{
+  font-size: 14px;
+}
+
+/* Buttons */
+.big-btn{
+  width: min(420px, 92%);
+  height: 64px;
+  border-radius: 10px;
+  background: var(--btn);
+  border: 0;
+  font-weight: 900;
+  font-size: 24px;
+  color:#fff;
+  text-decoration:none;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow: 0 12px 22px rgba(0,0,0,.10);
+  transition:.2s;
+}
+.big-btn:hover{ transform: translateY(-1px); opacity:.95; }
+
+.bottom-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  direction: ltr;
+}
+
+.btn-bottom{
+  width: 272px;
+  min-height: 46px;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 8px;
+  background: #69c9dd;
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1.1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,.12);
+  transition: .2s;
+}
+
+.btn-bottom:hover{
+  color: #fff;
+  transform: translateY(-1px);
+  opacity: .96;
+}
+
+.btn-bottom.outline{
+  background: #69c9dd;
+}
+
+/* Bottom band */
+.bottom-band{
+  background:#e9e9e9;
+  padding: 46px 0;
+}
+
+.illus{
+  width: 290px;
+  max-width: 100%;
+}
+
+.bottom-title{
+  font-weight: 900;
+  font-size: 44px;
+  margin:0;
+  color:#111;
+}
+
+.bottom-sub{
+  font-weight: 800;
+  color:#111;
+  margin: 10px 0 0;
+  font-size: 22px;
+}
+
+.bottom-row{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.yt{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  font-weight: 900;
+  font-size: 36px;
+}
+.yt i{ color:#ff0000; font-size: 44px; }
+
+.social{
+  display:flex;
+  gap: 14px;
+  justify-content: flex-end;
+}
+.soc{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background:#fff;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  color:#1f2b33;
+  box-shadow: 0 10px 18px rgba(0,0,0,.08);
+  text-decoration:none;
+  font-size: 18px;
+}
+.soc:hover{ transform: translateY(-1px); }
+
+/* Footer */
+.footer-dark{
+  background: var(--nav);
+  color:#fff;
+}
+
+@media (max-width: 768px){
+  .bottom-buttons{
+    gap: 16px;
+  }
+
+  .btn-bottom{
+    width: min(280px, 92%);
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
+  <defs>
+    <linearGradient id="calendarBody" x1="16" y1="18" x2="78" y2="82" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9BC7FF"/>
+      <stop offset="1" stop-color="#5973D9"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="2" width="96" height="92" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="6" stdDeviation="4" flood-color="#16164A" flood-opacity=".28"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <rect x="12" y="18" width="60" height="60" rx="10" fill="url(#calendarBody)"/>
+    <rect x="12" y="18" width="60" height="16" rx="10" fill="#3E4E9D"/>
+    <rect x="22" y="42" width="8" height="8" rx="2" fill="#D8D8D8"/>
+    <rect x="38" y="42" width="8" height="8" rx="2" fill="#D8D8D8"/>
+    <rect x="54" y="42" width="8" height="8" rx="2" fill="#D8D8D8"/>
+    <rect x="22" y="56" width="8" height="8" rx="2" fill="#D8D8D8"/>
+    <rect x="38" y="56" width="8" height="8" rx="2" fill="#D8D8D8"/>
+    <rect x="54" y="56" width="8" height="8" rx="2" fill="#D8D8D8"/>
+    <rect x="22" y="10" width="6" height="18" rx="3" fill="#D9F5FF"/>
+    <rect x="42" y="10" width="6" height="18" rx="3" fill="#D9F5FF"/>
+    <rect x="62" y="10" width="6" height="18" rx="3" fill="#D9F5FF"/>
+    <circle cx="70" cy="68" r="16" fill="#59D646"/>
+    <path d="M62 68.5L67.5 74L78 61.5" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

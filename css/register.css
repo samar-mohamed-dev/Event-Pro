@@ -1,0 +1,117 @@
+:root{
+  --nav:#1f2b33;
+  --blue:#2f3cff;
+}
+
+*{
+  font-family:"Cairo",sans-serif;
+}
+
+body{
+  background:#f4f4f4;
+}
+
+/* NAV */
+.nav-dark{
+  background:var(--nav);
+}
+
+.back-link{
+  color:#fff;
+  font-weight:900;
+  font-size:24px;
+  text-decoration:none;
+}
+
+/* Logo */
+.logo-wrap img{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  background:#0f172a;
+  padding:15px;
+}
+
+.brand-title{
+  font-size:48px;
+  font-weight:900;
+}
+
+/* Pill */
+.main-pill{
+  display:inline-block;
+  padding:14px 70px;
+  border-radius:999px;
+  border:4px solid var(--blue);
+  font-size:28px;
+  font-weight:900;
+  background:#fff;
+}
+
+/* FORM */
+.register-form{
+  max-width:1000px;
+}
+
+.field{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.field input{
+  flex:1;
+  height:50px;
+  border-radius:8px;
+  border:2px solid var(--blue);
+  padding:0 12px;
+  outline:none;
+  font-size:16px;
+}
+
+.field label{
+  width:200px;
+  font-weight:800;
+  font-size:18px;
+  text-align:right;
+}
+
+/* Confirm */
+.confirm-btn{
+  width:350px;
+  height:60px;
+  border:2px solid var(--blue);
+  border-radius:8px;
+  background:#fff;
+  font-size:28px;
+  font-weight:900;
+  transition:.2s;
+}
+
+.confirm-btn:hover{
+  background:var(--blue);
+  color:#fff;
+}
+
+/* Bottom */
+.bottom-section{
+  padding:60px 0;
+}
+
+.bottom-title{
+  font-size:46px;
+  font-weight:900;
+}
+
+.bottom-image img{
+  width:80%;
+  max-width:900px;
+  border-radius:20px;
+}
+
+/* Footer */
+.footer-dark{
+  background:var(--nav);
+  color:#fff;
+}
